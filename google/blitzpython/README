@@ -1,0 +1,89 @@
+License Info
+------------
+
+The Blitz app uses the following third-party open source libraries and plugins:
+
+* jQuery (www.jquery.com) - licensed under both the MIT and GPL Licenses
+* JQuery curvy corners (www.curvycorners.net) - licensed under the LGPL
+* simplemodal - www.ericmmartin.com - licensed under the GPL and MIT licenses
+* simplejson - http://simplejson.googlecode.com - MIT license
+* Jin Chess (game piece images) - http://jinchess.com - licensed under the GPL
+
+The server-side source code is split into two groups - the datastore 
+(gamemodel.py, chat.py, and lobby.py) and the request handlers (blitz.py,
+ajax.py, lobby_ajax.py, and game_ajax.py). 
+
+The client-side code lives in the javascript directory - init.js and blitz.js
+contain general utility routines, chat.js implements the chat channels, 
+lobby.js and game.js implement the lobby and game views, respectively. The
+chess engine (move validator, endgame detection, etc) lies in chess.js.
+
+
+Request Handlers
+----------------
+
+blitz.py contains the code to render all of the static portions of our pages
+(the main page, the history page, the lobby frame, and the game board). 
+
+The contents of the lobby and the game page are filled in dynamically via Ajax
+calls (handled by lobby_ajax.py and game_ajax.py respectively). The Ajax
+APIs for both pages adhere to the REST standard, using idempotent PUTs and
+DELETEs to create/delete data entities, and specific GET URLs that do not 
+depend on session state to avoid issues with proxy caches. The Ajax request
+handlers provide the primary interface to the data store, and are also
+responsible for sending out email notifications on game creation.
+
+To minimize data transmission, the client keeps track of the index of the
+last chat item and last move sent from the server, and sends that up with
+future requests - this allows the ajax handlers to only send down new data
+that has arrived, or else an empty, minimal response when there have been
+no data changes.
+
+
+Datastore
+---------
+There are three elements to the datastore:
+
+lobby.py - a datastore containing timestamped records used to track user 
+"presence" information. As users enter the lobby, a "presence" record is 
+created for them and the timestamp is updated periodically as their client 
+polls for updates. When the client browser leaves the page, it notifies the 
+server so the presence record for the user can be deleted - the timestamps are 
+used as a fallback so if someone disconnects without notifying the server (for 
+example, if the browser crashes) their presence info will gracefully age out of
+the datastore within a few minutes.
+
+chat.py - a datastore containing ordered chat strings, one record per chat 
+channel (for example, the lobby chat exists within a single record in this 
+table). Chats are limited in length (the lobby only tracks the most recent 50 
+entries, and each game chat channel holds the most recent 200 items) - the 
+expected size is less than 1-2K, so we store all of the chat data for a single 
+channel in one database entity (this allows us to order chat entries without
+requiring the use of an external counter).
+
+game.py - a datastore containing information about each game, one record per
+game. The automatically-assigned key for each game is also used as a named key
+when creating a record in the chat datastore, to associate a chat channel with 
+each game. The game data for each game is on the order of a couple of hundred
+bytes, and is stored as a sequence of strings within a single database entity,
+just like the chat data. Each game record tracks the game state (open, active,
+completed) and tracks the participants and public status, allowing the 
+request handlers to do simple permissions checking (for example, a spectator
+can view a public game, but is not given access to the private chat channel).
+
+All datastore puts() are protected by a transaction.
+
+Client-side
+-----------
+The client side code uses the jQuery library for its Ajax queries and browser
+effects. The chess engine was written from scratch for this project, and has
+a custom unit-test framework included in chess_test.html.
+
+Since there is a server-side quota which limits how long each request can take,
+we use lightweight polling to update the chat windows and game state - when
+playing a game, each request to the server only requires fetching a single
+data item by key (via get(key)), and only changes are sent down to the client.
+To further improve scalability, the refresh rate for timed games is much
+higher than for untimed games - for untimed games, the game board only refreshes
+once per minute.
+

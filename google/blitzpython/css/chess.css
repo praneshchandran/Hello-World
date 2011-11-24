@@ -1,0 +1,110 @@
+
+.piece {
+    width: 56px;
+    height: 56px;
+    xbackground-image: url(/images/set_56x56.gif);
+    background-image: url(/images/jin.png);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.gameBoard .ie6 {
+    background-image: url(/images/jin.gif);
+}
+
+.queen {
+    background-position: -56px 0px;
+}
+
+.bishop {
+    background-position: -112px 0px;
+}
+.knight {
+    background-position: -168px 0px;
+}
+.rook {
+    background-position: -224px 0px;
+}
+.pawn {
+    background-position: -280px 0px;
+}
+.blank {
+    background-position: 500px 0px;
+}
+
+.king_black {
+    background-position: 0px -56px;
+}
+.queen_black {
+    background-position: -56px -56px;
+}
+.bishop_black {
+    background-position: -112px -56px;
+}
+.knight_black {
+    background-position: -168px -56px;
+}
+.rook_black {
+    background-position: -224px -56px;
+}
+.pawn_black {
+    background-position: -280px -56px;
+}
+
+.templates {
+    display:none;
+}
+
+.x0 {
+    left: 0px;
+}
+.x1 {
+    left: 56px;
+}
+.x2 {
+    left: 112px;
+}
+.x3 {
+    left: 168px;
+}
+.x4 {
+    left: 224px;
+}
+.x5 {
+    left: 280px;
+}
+.x6 {
+    left: 336px;
+}
+.x7 {
+    left: 392px;
+}
+
+.y7 {
+    top: 0px;
+}
+.y6 {
+    top: 56px;
+}
+.y5 {
+    top: 112px;
+}
+.y4 {
+    top: 168px;
+}
+.y3 {
+    top: 224px;
+}
+.y2 {
+    top: 280px;
+}
+.y1 {
+    top: 336px;
+}
+.y0 {
+    top: 392px;
+}
+
+div.selected {
+    background-color: #5f5;
+}

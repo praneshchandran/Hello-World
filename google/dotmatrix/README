@@ -1,0 +1,21 @@
+Copyright 2008 Google Inc.
+All rights reserved.
+
+Simple Drawing Application using the Google App Engine.
+
+
+ABOUT
+========
+But what is it, you might ask?
+
+It's easy: you draw tiny little pictures, then use them anywhere you want. You
+only get 121 pixels and two colors, but hey, that didn't stop anyone in the
+80's.
+
+
+INSTALLING
+========
+This is inteded to be run in the Google App Engine.
+
+For instructions on how to get starting with that, see:
+See http://code.google.com/appengine/docs/gettingstarted

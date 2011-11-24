@@ -1,0 +1,357 @@
+body {
+    font-family: arial, sans-serif;
+    font-size: 20px;
+}
+
+div.mainContent, div.lobbyContent, div.historyContent {
+    margin: auto;
+    width: 620px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+div.lobbyContent {
+    width: 720px;
+}
+
+div.historyContent {
+    padding-left: 30px;
+}
+div.logo {
+    width: 500px;
+    margin: auto;   
+}
+.logo span {
+    font-size: 28px; 
+    padding-top: 30px;
+    padding-left: 15px;
+    position: absolute;
+}
+
+.logo .oneLine {
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 28px; 
+    text-align: center;
+}
+
+.title {
+    padding-top: 30px;
+}
+
+.dialogTitle {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    background-color: #ddf;
+    border-bottom: solid 1px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.radioGroup, .checkboxGroup {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.dialogContent {
+    display: none;
+}
+
+.dialogBody {
+    padding-left: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.dialogBody #email {
+    width: 200px;
+}
+
+#promoteForm {
+    padding-left: 100px;
+}
+
+.menu.top { 
+    margin-top: 50px;
+}
+.menu {
+    margin-left: 150px;
+    margin-top: 30px;
+    padding-left: 30px;
+    background: url(/images/bullet.gif);
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+}
+
+.subtext {
+    font-size: 14px;
+}
+
+.logout {
+    font-size: 14px;
+    float: right;
+}
+
+.header {
+    font-size: 14px;
+    float: left;
+    position: absolute;
+}
+
+
+a, a:visited {
+    cursor:pointer;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:blue;
+    cursor:pointer;
+}
+
+
+a.btn {
+    z-index: 3000;
+}
+
+/* Links that look like buttons */
+a.btn,
+a.btn:link,
+a.btn:visited {
+  background-image: url(/images/bg-btn.gif);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  border: 1px solid #b0b0b0;
+  text-decoration: none;
+  color: #222;
+  outline: none;
+  height: 1%;
+  font-size: 16px;
+  padding: .125em .5em .125em .5em;
+  background-color: #ddd;
+}
+
+a.btn:hover {
+  border-color: #9cf #69e #69e #7af;
+}
+
+a.btn:active {
+  background-color: #ffeca0;
+  background-image: url( );
+}
+
+div.help a, div.header a, div.logout a {
+    color:blue;
+    text-decoration: underline;
+}
+
+.buttonBar {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.error {
+    font-size: 16px;
+    color: red;
+    text-align: center;
+}
+
+.help {
+    font-size: 16px;
+    text-align: center;
+}
+
+.gameStuff {
+    height: 400px;
+}
+
+.playerTable {
+    float: left;
+    font-size: 16px;
+    width: 150px;
+    height: 400px;
+    border: 2px solid;
+    border-right: 1px solid;
+    overflow: auto;
+    overflow-x:hidden;
+}
+.playerList {
+    line-height: 1.3em;
+}
+
+.gameTable {
+    width: 530px;
+}
+.historyList, .gameList {
+    border: 2px solid;
+    font-size: 16px;
+}
+.gameList {
+    border-left: 1px solid;
+    height: 400px;
+    width: 540px;
+    float: left;
+    overflow: auto;
+    overflow-x:hidden;
+}
+
+.gameTable, .historyList {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr.even {
+    background-color: #eef;
+}
+
+tr.gameTableHeader {
+    background-color: #ddf;
+    height: 30px;
+}
+
+.historyList td, .gameTable td {
+    height: 28px;
+}
+
+
+.historyListHeader th, .gameTable th {
+    height: 30px;
+    font-weight: normal;
+    font-size: 22px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.offerGame {
+    margin-top: 10px;
+    text-align: center;
+    height: 35px;
+}
+
+#offerNewGame {
+}
+
+.chat {
+    font-size: 16px;
+    height: 6em;
+    overflow: auto;
+    overflow-x:hidden;
+    border: 2px solid #000;
+}
+
+.playerTitle {
+    background-color: #ddf;
+    height: 30px;
+    text-align: center;
+    font-size: 22px;
+    border-bottom: solid 1px;
+}
+
+.busy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 5000;
+}
+
+
+.corners {
+    border: 3px solid #aaf;
+}
+
+.gameContainer {
+    width: 508px;
+    height: 448px;
+    margin: auto;
+}
+.gameBoard, .blackHeader, .whiteHeader{
+    width:448px;
+    margin: auto;
+}
+
+.blackHeader, .whiteHeader {
+    height: 46px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.gameBoard {
+    position: relative;
+    height:448px;
+    background-image: url(/images/board_56x56.gif);
+    border: 1px solid;
+}
+
+.chatGroup {
+    padding-top: 10px;
+}
+
+#whitePlayer, #blackPlayer {
+    position: relative;
+    top: -12px;
+}
+
+.hdrLeft {
+    float: left;
+}
+
+.hdrRight {
+    padding-top: 10px;
+    float: right;
+}
+.timeDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #ddf;
+}
+.critical {
+    color: red;
+}
+
+#blackIndicator, #whiteIndicator {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -8px;
+}
+
+.waitingForOpponent, .yourTurn, .gameOver {
+    height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.waitingForOpponent {
+    background-color: #eef;
+}
+.yourTurn {
+    background-color: #ffa;
+}
+.gameOver {
+    background-color: #cfc;
+}
+
+
+.historyList {
+    width: 550px;
+}
+
+tr.historyListHeader {
+    background-color: #ddf;
+    height: 30px;
+}
+
+div.invalidMove, div.inCheck {
+  background-color: red;
+}
+div.lastMove {
+  background-color: #dd8;
+}

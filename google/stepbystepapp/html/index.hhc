@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.AddMemberAction"><param name="Local" value="classtasks_1_1_add_member_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.BaseRequestHandler"><param name="Local" value="classtasks_1_1_base_request_handler.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.CreateTaskListAction"><param name="Local" value="classtasks_1_1_create_task_list_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.EditTaskAction"><param name="Local" value="classtasks_1_1_edit_task_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.InboxAction"><param name="Local" value="classtasks_1_1_inbox_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.InboxPage"><param name="Local" value="classtasks_1_1_inbox_page.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.PublishTaskListAction"><param name="Local" value="classtasks_1_1_publish_task_list_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.SetTaskCompletedAction"><param name="Local" value="classtasks_1_1_set_task_completed_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.SetTaskPositionsAction"><param name="Local" value="classtasks_1_1_set_task_positions_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.Task"><param name="Local" value="classtasks_1_1_task.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskList"><param name="Local" value="classtasks_1_1_task_list.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskListAction"><param name="Local" value="classtasks_1_1_task_list_action.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskListMember"><param name="Local" value="classtasks_1_1_task_list_member.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskListPage"><param name="Local" value="classtasks_1_1_task_list_page.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.BaseRequestHandler"><param name="Local" value="classtasks_1_1_base_request_handler.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.AddMemberAction"><param name="Local" value="classtasks_1_1_add_member_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.CreateTaskListAction"><param name="Local" value="classtasks_1_1_create_task_list_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.EditTaskAction"><param name="Local" value="classtasks_1_1_edit_task_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.InboxAction"><param name="Local" value="classtasks_1_1_inbox_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.InboxPage"><param name="Local" value="classtasks_1_1_inbox_page.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.PublishTaskListAction"><param name="Local" value="classtasks_1_1_publish_task_list_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.SetTaskCompletedAction"><param name="Local" value="classtasks_1_1_set_task_completed_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.SetTaskPositionsAction"><param name="Local" value="classtasks_1_1_set_task_positions_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskListAction"><param name="Local" value="classtasks_1_1_task_list_action.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskListPage"><param name="Local" value="classtasks_1_1_task_list_page.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.Task"><param name="Local" value="classtasks_1_1_task.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskList"><param name="Local" value="classtasks_1_1_task_list.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks.TaskListMember"><param name="Local" value="classtasks_1_1_task_list_member.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Package List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="tasks"><param name="Local" value="namespacetasks.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="templatefilters"><param name="Local" value="namespacetemplatefilters.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace Members"><param name="Local" value="namespacemembers.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="File List"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="/root/google/tasksgae/tasks.py"><param name="Local" value="tasks_8py.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="/root/google/tasksgae/templatefilters.py"><param name="Local" value="templatefilters_8py.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

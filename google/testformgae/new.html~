@@ -1,0 +1,53 @@
+<html>
+<body>
+{# Check if we have any todos, only in this case render the table #}
+
+{% if numbertodos %}
+ 
+You have a total number of {{numbertodos}} Todos. 
+
+<table>
+  <tr>
+    
+
+      <th>Name </th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Long Description</th>
+      <th>Phone number</th>
+      <th>Updated</th>	
+      <th>Done</th>
+      
+    </tr>
+
+{% for todo in todos %}
+<tr> 
+<td>
+{{todo.shortDescription}}
+</td>
+<td>
+{{todo.created|date:"d.m.Y"}}
+</td>
+<td>
+{{todo.dueDate}}
+</td>
+<td>
+{{todo.longDescription}}
+</td>
+<td>
+{{todo.url}}
+</td>
+<td>
+{{todo.updated|date:"d.m.Y"}}
+</td>
+<td>
+<a class="done" href="/done?id={{todo.key.id}}" >Done</a>
+</td>
+</tr> 
+{% endfor %}
+</table>
+
+{% endif %}
+<hr />
+</body>
+</html>

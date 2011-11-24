@@ -1,0 +1,28 @@
+<h3>Recent drawings:</h3>
+<div class='list'>
+  {% for pic in pics %}
+  <div class='icon'>
+    <a href='{{ pic.url }}'><img src='{{ pic.url }}'></a>
+    <a class='name' href='{{ pic.url }}'/>{{ pic.name }}</a>
+    {% if user_is_admin %}
+    <span class='attribution'>By {{ pic.display_author }}</span>
+    {% endif %}
+    <span class='date'>{{ pic.date|date:"M d, Y" }}</span>
+    {% if user_is_admin %}
+    <span class='index'>Date sort index: {{ pic.date_sort_index }}</span>
+    <form action='delete' method='post'>
+      <input type='hidden' name='name' value='{{ pic.name }}'>
+      <input type='submit' name='button' value='Delete'
+      onClick='return confirm("Are you sure you want to delete this?")'>
+    </form>
+    {% endif %}
+    <br class='clear'>
+  </div>
+  {% endfor %}
+  {% if show_prev %}
+    <a href='?offset={{prev_offset}}'>&lt;&lt; Previous Page</a>
+  {% endif %}
+  {% if show_next %}
+    <a href='?offset={{next_offset}}'>Next Page &gt;&gt;</a>
+  {% endif %}
+</div>

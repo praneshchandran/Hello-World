@@ -1,0 +1,48 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=dotmatrix
+
+[WINDOWS]
+main="dotmatrix","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+index.html
+bmp2json_8py_source.html
+clock_8py_source.html
+dotmatrix_8py_source.html
+models_8py_source.html
+page_8py_source.html
+views_8py_source.html
+views__admin_8py_source.html
+annotated.html
+classes.html
+hierarchy.html
+functions.html
+functions_func.html
+classmodels_1_1_validation_exception.html
+classmodels_1_1_date_sort_index.html
+classmodels_1_1_picture.html
+classpage_1_1_page.html
+classviews_1_1_edit.html
+classviews_1_1_list.html
+classviews_1_1_root.html
+classviews_1_1_image.html
+classviews_1_1_about.html
+classviews_1_1_error404.html
+classviews__admin_1_1_admin.html
+classviews__admin_1_1_update_datastore.html
+classviews__admin_1_1_delete.html
+classviews__admin_1_1_test.html
+classviews__admin_1_1_backup.html
+classviews__admin_1_1_restore.html
+files.html
+tabs.css
+tab_b.gif
+tab_l.gif
+tab_r.gif

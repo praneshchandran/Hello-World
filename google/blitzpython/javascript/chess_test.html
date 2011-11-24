@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Unit tests for chess.js</title>
+    <style type="text/css">
+      body {font-family: courier;}
+      .success { color: green;}
+      .error { color: red;}
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="chess.js"></script>
+    <script type="text/javascript" src="chess_test.js"></script>
+
+    <!-- This must be at the end -->
+    <script>
+      function assertTrue(expr) {
+        if (!expr) {
+          throw "assertTrue failed";
+        }
+      }
+
+      function assertFalse(expr) {
+        if (expr) {
+          throw "assertFalse failed";
+        }
+      }
+
+      function assertEquals(a, b) {
+        if (a != b) {
+          throw "assertEquals failed: " + a + " != " + b;
+        }
+      }
+
+      function log(str, class) {
+        if (class) {
+          document.write("<div class='" + class + "'>");
+        } else {
+          document.write("<div>");
+        }
+        document.write(str);
+        document.write("</div>");
+      }
+
+      // This is our quick-and-dirty test framework
+      var testsToRun = [];
+      for (x in tests) {
+        if (x.substring(0,4) == 'test') {
+          testsToRun.push(x);
+        }
+      }
+      if (testsToRun.length == 0) {
+        log("NO TESTS FOUND", "error");
+      } else {
+        var testsPassed = 0;
+        log("Found " + testsToRun.length + " tests<br/>", "success");
+        for (var i = 0 ; i < testsToRun.length ; i++) {
+          try {
+            test = testsToRun[i];
+            if (tests.setUp) tests.setUp();
+            tests[test]();
+            if (tests.tearDown) tests.tearDown();
+            testsPassed++;
+            log("Test " + test + " completed successfully", "success");
+          } catch (e) {
+            log("Error running " + test + ": " + e, "error");
+          }
+        }
+        if (testsPassed == testsToRun.length) {
+          log("ALL TESTS PASSED", "success");
+        } else {
+          log("" + testsToRun.length - testsPassed + " out of " + 
+              testsToRun.length + " tests failed", "error");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+{% extends '_base.html' %}
+
+{% block head_extra %}
+  <script type='text/javascript' src='/static/dotmatrix.js'></script>
+{% endblock %}
+
+{% block body_tag_extra %}
+  onLoad='dotmatrix_setupDrawingArea()'
+  onMouseUp='dotmatrix_stopDrawing(); return false;'
+  {% comment %}
+  BUG: If you click in the drawing area, drag outside the bowser
+  window, and release the button, then move the mouse back to the drawing area,
+  you'll be "stuck" in drawing mode until you click again.
+  {% endcomment %}
+{% endblock %}
+
+{% block content %}
+  <div class='drawing'>
+    <div class='component'>
+      <h3>Draw Here</h3>
+      <table class='canvas'>
+        {% for row in pic.pixels_as_enumerated_grid %}
+        <tr>
+          {% for pixel in row %}
+          <td id='canvas_pixel_{{ pixel.id }}'
+            class='{{ pixel.value|yesno:"black,white" }}'
+            onMouseDown='dotmatrix_startDrawing({{ pixel.id }}); return false;'
+            onMouseOver='dotmatrix_mouseOver({{ pixel.id }})'
+            >
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div class='component'>
+      <h3>Clear Drawing</h3>
+      <div id=fill-white onClick='dotmatrix_fill("white")'>
+        <div class='white sample'></div> White
+      </div>
+      <br class='clear'>
+      <div id=fill-black onClick='dotmatrix_fill("black")'>
+        <div class='black sample'></div> Black
+      </div>
+      <br class='clear'>
+    </div>
+    <div class='component'>
+      <h3>Preview</h3>
+      <table class='preview'>
+        {% for row in pic.pixels_as_enumerated_grid %}
+        <tr>
+          {% for pixel in row %}
+          <td id='preview_pixel_{{ pixel.id }}'
+            class='{{ pixel.value|yesno:"black,white" }}'>
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div class='component'>
+      <h3>Save</h3>
+      <form method='post'>
+        <input type='hidden' name='width' value='{{ pic.width }}'>
+        <input type='hidden' name='height' value='{{ pic.height }}'>
+        <table class='hidden'>
+          {% for row in pic.pixels_as_enumerated_grid%}
+          <tr>
+            {% for pixel in row %}
+            <td>
+              <input id=pixel_in_{{ pixel.id }}
+                     name=pixel_in_{{ pixel.id }}
+                     type='checkbox'
+                     {{ pixel.value|yesno:"checked," }}>
+             </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </table>
+        Name: <input type='text' name='name'value='{{ pic.name }}'/>
+        <input type='submit' name='action' value='Preview'>
+      </form>
+    </div>
+  </div class='drawing'>
+  <br class='clear'>
+  <a href='/list'>Cancel (Back to List)</a>
+{% endblock %}

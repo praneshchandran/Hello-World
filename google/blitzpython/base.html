@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    {% block title %}
+    <title>Blitz, the real-time ajax chess server</title>
+    {% endblock %}
+    <link href="/css/main.css" type="text/css" rel="Stylesheet"/>
+    <link href="/css/simplemodal.css" type="text/css" rel="Stylesheet"/>
+    {% block css %}
+    {% endblock %}
+  </head>
+  <body>
+    <script type="text/javascript" src="/javascript/jquery-1.2.3.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.curvycorners.packed.js"></script>
+    <script type="text/javascript" src="/javascript/init.js"></script>
+    <script type="text/javascript" src="/javascript/blitz.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.simplemodal.js">
+      </script>
+    <script type="text/javascript">
+      blitz.user_email = "{{user.email|escape}}";
+      blitz.user_nickname = "{{user.nickname|escape}}";
+    </script>
+    {% block script %}
+    {% endblock %}
+
+    {% block header %}
+    {% endblock %}
+    <div class="logout">
+      {{user.email|escape}} | 
+      <a href="{{logout_url}}">logout</a>
+    </div>
+    <br/>
+    {% block maincontent %}
+    <div class="{{mainContentClass}} corners">
+    {% block logo %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    <br/>
+    </div>
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+  </body>
+</html>

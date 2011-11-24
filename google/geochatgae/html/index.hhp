@@ -1,0 +1,38 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=geochatgae
+
+[WINDOWS]
+main="geochatgae","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+index.html
+datamodel_8py_source.html
+events_8py_source.html
+geochat_8py_source.html
+json_8py_source.html
+settings_8py_source.html
+annotated.html
+classes.html
+functions.html
+functions_func.html
+classdatamodel_1_1_chat_event.html
+classdatamodel_1_1_settings.html
+classevents_1_1_update_handler.html
+classevents_1_1_move_handler.html
+classevents_1_1_chat_handler.html
+classgeochat_1_1_main_handler.html
+classgeochat_1_1_settings_handler.html
+classgeochat_1_1_help_handler.html
+classjson_1_1_gql_encoder.html
+files.html
+tabs.css
+tab_b.gif
+tab_l.gif
+tab_r.gif

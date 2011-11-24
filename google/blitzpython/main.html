@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block logo %}
+      <div class="logo">
+        <img src="images/logo.png" width="105px" height="111px"/>
+        <span>Welcome to Blitz!<br/>the real-time ajax chess server</span>
+      </div>
+{% endblock %}
+{% block content %}
+      <div class="help">
+        <a id="whatIsBlitz">(What is Blitz Chess?)</a>
+      </div>
+      <div id="whatIsBlitzDialog" class="dialogContent">
+        <div class="dialogTitle">What is Blitz Chess?</div>
+        <div class="dialogBody">
+          Blitz Chess is a fast-paced game where each player has a limited
+          amount of total time to make their moves (typically a total of 5 or 10
+          minutes).<br/>
+          <br/>
+          When it is a player's turn to move, the total amount of time
+          remaining for that player ticks away on their clock - the clock stops
+          when they've made their move, at which point the other player's clock
+          begins ticking down. All of the normal rules of Chess apply, except
+          that in addition to losing by Checkmate, a player can also lose
+          by running out of time on their clock.<br/>
+          <br/>
+          This server supports games of Blitz Chess played in real-time, and
+          also traditional untimed games of Chess where each player has an 
+          unlimited amount of time to make their next move, and receives
+          email notifications when it is their turn again.
+        </div>
+        <div  class="buttonBar">
+          <a class="btn" id="closeModal">OK</a>
+        </div>
+      </div>
+      <div class="menu top">
+        <a id="enterLobby">Play Blitz</a>
+        <div class="subtext">
+          enter the Blitz lobby
+        </div>
+      </div>
+      <div class="menu">
+        <a id="viewHistory">Your game history</a>
+        <div class="subtext">
+          view the results of your past games
+        </div>
+      </div>
+      <!--
+      <div class="menu">
+        <a id="editProfile">Edit your profile</a>
+        <div class="subtext">
+          edit your name, picture, and default game settings
+        </div>
+      </div>
+      -->
+{% endblock %}
+

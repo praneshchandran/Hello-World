@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block css %}
+    <link href="/css/chess.css" type="text/css" rel="Stylesheet"/>
+{% endblock %}
+{% block script %}
+<script type="text/javascript" src="/javascript/chess.js"></script>
+<script type="text/javascript" src="/javascript/game.js"></script>
+<script type="text/javascript" src="/javascript/chat.js"></script>
+<script type="text/javascript">
+  game.gameKey = "{{game_key}}";
+</script>
+{% endblock %}
+
+{% block header %}
+<div class="header">
+  <a href="/">Main</a>
+  &nbsp; &nbsp;
+  <a href="/lobby">Return to Lobby</a>
+</div>
+{% endblock %}
+
+{% block logo %}
+  <div class="title">Loading game from server...</div>
+{% endblock %}
+{% block content %}
+  <img class="busy" src="/images/spin32.gif"/>
+  <div class="waitingForOpponent" style="display:none">
+    Waiting for your opponent..
+  </div>
+  <div class="yourTurn" style="display:none">
+    Your turn!
+    &nbsp;<a class="btn" id="resignGame">Resign</a>
+    &nbsp;<a class="btn" id="offerDraw">Offer Draw</a>
+  </div>
+  <div class="gameOver" style="display:none">
+    &nbsp;
+  </div>
+  <div class="statusTop" style="display:none">
+    <div class="blackHeader">
+      <div class="hdrLeft">
+        <span id="blackIndicator">&gt;</span>
+        <img src="/images/black_king.gif"/>
+        <span id="blackPlayer">&nbsp;</span>
+      </div>
+      <div class="hdrRight">
+        <div class="timeDisplay" style="display:none">
+          <span id="blackTime">&nbsp;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gameBoard"> </div>
+  <div class="statusBottom" style="display:none">
+    <div class="whiteHeader">
+      <div class="hdrLeft">
+        <span id="whiteIndicator">&gt;</span>
+        <img src="/images/white_king.gif"/>
+        <span id="whitePlayer">&nbsp;</span>
+      </div>
+      <div class="hdrRight">
+        <div class="timeDisplay" style="display:none">
+          <span id="whiteTime">&nbsp;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chatGroup" style="display:none">
+    <div class="chat">
+    </div>
+    Private Chat: <input type="text" id="chatInput" style="width:60%">
+    <a class="btn" id="sendGameChat">Send</a>
+  </div>
+  <div class="templates">
+  <div class="piece rook white"></div>
+  <div class="piece knight white"></div>
+  <div class="piece bishop white"></div>
+  <div class="piece queen white"></div>
+  <div class="piece king white"></div>
+  <div class="piece pawn white"></div>
+  <div class="piece rook_black black"></div>
+  <div class="piece knight_black black"></div>
+  <div class="piece bishop_black black"></div>
+  <div class="piece queen_black black"></div>
+  <div class="piece king_black black"></div>
+  <div class="piece pawn_black black"></div>
+  <div class="piece blank"></div>
+  </div>
+
+  <div id="acceptDrawDialog" class="dialogContent">
+    <div class="dialogTitle">Accept Draw?</div>
+    <div class="dialogBody">
+      Your opponent has offered to end this game in a draw.<br/><br/>
+      Do you wish to accept?
+    </div>
+    <div  class="buttonBar">
+      <a class="btn" id="acceptDraw">Accept</a>
+      <a class="btn" id="rejectDraw">Reject</a>
+    </div>
+  </div>
+
+  <div id="drawRefusedDialog" class="dialogContent">
+    <div class="dialogTitle">Draw refused</div>
+    <div class="dialogBody">
+      Your opponent has refused to end this game in a draw.
+    </div>
+    <div  class="buttonBar">
+      <a class="btn" id="closeModal">OK</a>
+    </div>
+  </div>
+
+<div id="promoteDialog" class="dialogContent">
+  <div class="dialogTitle">Promote Pawn</div>
+  <div class="dialogBody">
+    <form id="promoteForm">
+      <label>Select a new piece:</label></br>
+      <div class="radioGroup">
+        <input type="radio" checked="checked" name="promote" value="1" />Queen<br/>
+        <input type="radio" name="promote" value="2"/>Rook<br/>
+        <input type="radio" name="promote" value="3"/>Bishop<br/>
+        <input type="radio" name="promote" value="4"/>Knight<br/>
+      </div>
+    </form>
+    <div  class="buttonBar">
+      <span>
+        <a class="btn" id="doPromote">Promote pawn</a>
+        &nbsp;
+        <a class="btn" id="closeModal">Cancel</a>
+      </span>
+    </div>
+  </div>
+</div>
+{% endblock %}

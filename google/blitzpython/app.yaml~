@@ -1,0 +1,19 @@
+application: blitzpython
+version: 1
+runtime: python
+api_version: 1
+default_expiration: 1h
+
+handlers:
+- url: /images
+  static_dir: images
+
+- url: /css
+  static_dir: css
+
+- url: /javascript
+  static_dir: javascript
+
+- url: /.*
+  script: blitz.py
+

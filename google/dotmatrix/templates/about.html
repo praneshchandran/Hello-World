@@ -1,0 +1,28 @@
+{% extends '_base.html' %}
+
+{% block content %}
+  <h3>Just what is going on here?</h3>
+  <img src='/logo.png'>
+  <p>It's easy: you draw tiny little pictures, then use them anywhere you want.
+  You only get 121 pixels and two colors, but hey, that didn't stop anyone in
+  the 80's.
+  </p>
+
+  <h3>What can I do with the images?</h3>
+  <p>Whatever you want.  Use them as your avatar in a web forum.  Use them to
+  make a game.  Make a (tiny) birthday card for someone.
+  <table class='chessboard'>
+    {% for row in chessboard %}
+    <tr>
+      {% for piece in row %}
+        <td><img width=25px height=25px src='{{ piece }}'></td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+  </p>
+
+  <h3>Is there any way to import/export data?</h3>
+  <p>Yes, there is a way to import/export data as JSON, but it
+  isn't currently exposed to users.  Let me know if you want to do this.</p>
+{% endblock %}

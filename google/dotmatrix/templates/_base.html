@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/dotmatrix.css"/>
+  {% block head_extra %}{% endblock %}
+</head>
+<body {% block body_tag_extra %}{% endblock %}>
+  <div class='header'>
+    {% if user_is_admin  %}
+    Time: {{ elapsed_time }} seconds
+    {% endif %}
+    <div class='user-info'>
+      {% if user %}
+        <span class='name'>{{ user.nickname }}</span> |
+        {# HrEf fools the (broken) referrer hider. #}
+        <a HrEf='{{ logout_url }}'>Sign out</a>
+      {% else %}
+        <a href='{{ login_url }}'>Sign in</a>
+      {% endif %}
+    </div>
+    <br class='clear'>
+    <a href='/' class='header-link'><h1>Dot Matrix</h1></a>
+    {% block menu %}
+    <ul class='menu'>
+      <li><a href='/about'>About</a></li>
+      <li><a href='/edit'>Create New</a></li>
+      <li><a href='/list'>Look at Drawings</a></li>
+      {% if user_is_admin %}
+      <li><a href='/admin'>Admin</a></li>
+      {% endif %}
+    </ul>
+    {% endblock %}
+  </div>
+  {% if errors %}
+  <div class='errors'>
+    <ul>
+    {% for error in errors %}
+      <li>Error: {{ error }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  <div class='content'>
+    {% block content %}{% endblock %}
+  </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1728778-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* General */
+.clear { clear: both; }  /* For clearing float properties */
+.hidden { display: none; }
+body {
+  font-family: monospace;
+}
+p {
+  width: 50em;
+}
+
+/* About */
+.chessboard {
+  border-collapse: collapse;
+  border: solid black 2px;
+}
+
+.chessboard td {
+  line-height: 0;
+  padding: 0;
+  border: solid black 2px;
+}
+
+/* Header (common to all pages) */
+
+.header .user-info {
+  float: right;
+}
+
+.header .user-info .name {
+  font-size: 105%;
+  font-weight: bold;
+}
+
+.header {
+  border-bottom: solid black 1px;
+  margin-bottom: 2em;
+}
+
+.header h1 {
+  display: inline;
+}
+
+.header-link {
+  text-decoration: none;
+  color: black;
+}
+
+.header .title {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.header .menu {
+  display: inline;
+  padding-left: 1em;
+}
+
+.header .menu li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 3em;
+}
+
+.errors {
+  background-color: #ff9;
+  font-size: 150%;
+}
+
+/* Drawing/preview page */
+.drawing h3 {
+  margin: 0 0 1em 0;
+}
+
+.drawing .component {
+  float: left;
+  margin: 2em 2em 2em 2em;
+}
+
+.drawing .canvas, .drawing .preview {
+  border-collapse: collapse;
+}
+
+.drawing .canvas {
+  cursor: pointer;
+}
+
+.drawing .canvas {
+  border: solid 1px;
+}
+
+.drawing .canvas td {
+  width: 1.5em;
+  height: 1.5em;
+  border: solid 1px;
+  padding: 0;
+}
+
+.drawing .preview td {
+  /* TODO: I don't like harding this here AND in models.py */
+  width: 5px;
+  height: 5px;
+  padding: 0;
+}
+
+.black {background-color: black;}
+.white {background-color: white;}
+
+.drawing .sample {
+  width: 1.5em;
+  height: 1.5em;
+  border: solid 1px;
+  float: left;
+  margin: .4em;
+}
+
+#fill-white, #fill-black {
+  height: 2.5em;
+  line-height: 2.5em;
+  border: solid 1px;
+  padding: .1em .4em .1em .1em;
+  cursor: pointer;
+}
+
+.drawing .highlight {
+  background-color: #aaf;
+}
+
+/* List Page */
+.list .icon {
+  margin-bottom: 1em;
+}
+
+.list .icon img {
+  border: solid #efefef 3px;
+  margin: 0 1em 0 .5em;
+  float: left;
+}
+
+.list .icon .name {
+  font-size: 160%;
+}
+
+.list .icon .attribution, .list .icon .date {
+  display: block;
+  font-size: 85%;
+  color: gray;
+}
+
+

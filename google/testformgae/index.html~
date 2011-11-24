@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Customer Service</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+	</head>
+	<body>
+
+	<div style="width: 100%;">
+		<div class="topLine">
+			<div style="float: left;"><img src="images/todo.png" width="20" height="20" /></div>
+			<div style="float: left;" class="headline">Customer Service</div>
+			<div style="float: right;"><a href="{{ url }}">{{ url_linktext }}</a> {{user.nickname}}</div>
+		</div>
+	</div>
+
+<div style="clear: both;"/>	
+
+{# Check if we have any todos, only in this case render the table #}
+
+{% if numbertodos %}
+ 
+You have a total number of {{numbertodos}} Todos. 
+
+<table>
+  <tr>
+    
+
+      <th>Name </th>
+      <th>Compliant</th>
+      <th>Address</th>
+      <th>Phone number</th>
+      <th>Start Date</th>      
+      <th>Updated</th>
+      <th>Due Date</th>
+      <th>Done</th>
+       </tr>
+
+{% for todo in todos %}
+<tr> 
+<td>
+{{todo.shortDescription}}
+</td>
+<td>
+{{todo.compliantDescription}}
+</td>
+<td>
+{{todo.longDescription}}
+</td>
+<td>
+{% if todo.phone %}
+<a  href="{{todo.phone}}" > {{todo.phone}}</a>
+
+{% endif %}
+</td>
+<td>
+{{todo.created|date:"d.m.Y"}}
+</td>
+<td>
+{{todo.updated|date:"d.m.Y"}}
+</td>
+<td>
+{{todo.dueDate}}
+</td>
+<td>
+<a class="done" href="/done?id={{todo.key.id}}" >Done</a>
+</td>
+</tr> 
+{% endfor %}
+</table>
+
+{% endif %}
+
+
+<hr />
+
+
+
+<div class="headline">Create new Customer Form ?</div>
+
+{% if user %}
+
+<form action="/new" method="post">
+	<table>
+		<tr>
+			<td><label for="shortDescription">Name</label></td>
+			<td><input type="text" name="shortDescription" id="shortDescriptions" size="80"/></td>
+		</tr>
+		
+		<tr>
+			<td valign="top"><label for="compliantDescription">Compliant</label></td>
+			<td><textarea rows="2" cols="80" name="compliantDescription" id="compliantDescription"></textarea></td>
+		</tr>
+		<tr>
+			<td><label for="dueDate">End date</label></td>
+			<td><input type="dueDate" name="dueDate" id="dueDate"/></td>
+		</tr>
+		<tr>
+			<td valign="top"><label for="longDescription">Address</label></td>
+			<td><textarea rows="4" cols="80" name="longDescription" id="longDescription"></textarea></td>
+		</tr>
+		<tr>
+			<td><label for="phone">Phone number</label></td>
+			<td><input type="text" name="phone" id="phone" size="80"/></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"><input type="submit" value="Create"/></td>
+		</tr>
+	</table>
+</form>
+
+{% else %}
+Login with your Google Account to create and review customer service.
+{% endif%}
+
+
+</body>
+</html>
+
+

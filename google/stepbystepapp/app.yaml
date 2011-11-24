@@ -1,0 +1,14 @@
+application: stepbystepapp
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /html
+  static_dir: html
+
+- url: /.*
+  script: helloworld.py

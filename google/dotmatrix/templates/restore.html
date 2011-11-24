@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block content %}
+  <h3>Restore</h3>
+  <h4>WARNING</h4>
+  Don't forget that you have to regenerate the date_sort_index values after
+  doing a restore!
+
+  <form method='post' enctype='multipart/form-data'>
+    <input type='file' name='backup_file'>
+    <input type='submit' value='Restore'>
+  </form>
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block script %}
+<script type="text/javascript" src="/javascript/lobby.js"></script>
+<script type="text/javascript" src="/javascript/chat.js"></script>
+{% endblock %}
+{% block header %}
+<div class="header">
+  <a href="/">Main</a>
+</div>
+{% endblock %}
+
+
+
+{% block logo %}
+<div class="logo">
+  <img src="images/logo.png" width="105px" height="111px"/>
+  <span id="lobbyStatus">Blitz Lobby<br/>Contacting server...</span>
+</div>
+{% endblock %}
+
+{% block content %}
+<br/>
+<img class="busy" src="/images/spin32.gif"/>
+<div class="gameStuff">
+  <div class="playerTable">
+    <div class="playerTitle">Players</div>
+    <div class="playerList">
+    </div>
+  </div>
+
+  <div class="gameList">
+    <table class="gameTable zebra">
+      <tr class="gameTableHeader">
+        <th>Player 1</th>
+        <th>Player 2</th>
+        <th>Time</th>
+        <th>Action</th>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="offerGame">
+  <a class="btn" id="inviteFriend">Challenge a friend</a>
+  &nbsp;
+  <a class="btn" id="offerNewGame">Offer public game</a>
+</div>
+<div class="chat">
+</div>
+Chat: <input type="text" id="chatInput" style="width:75%">
+<a class="btn" id="sendLobbyChat">Send</a>
+
+<div id="offerBlitzGameDialog" class="dialogContent">
+  <div class="dialogTitle">Offer Public Game</div>
+  <div class="dialogBody">
+    This will create an open game that any player can join.<br/><br/>
+    <form id="offerForm">
+      <div class="radioGroup">
+        <input type="radio" checked="checked" name="game_type" value="blitz-5" />Blitz Chess (5 minutes per side)<br/>
+        <input type="radio" name="game_type" value="blitz-10"/>Speed Chess (10 minutes per side)<br/>
+        <input type="radio" name="game_type" value="chess"/>Chess (regular chess - no time limits)<br/>
+      </div>
+      <div class="checkboxGroup">
+        <input type="checkbox" name="public" checked="checked" value="true"/>Allow spectators to watch this game
+      </div>
+    </form>
+    <div  class="buttonBar">
+      <span>
+        <a class="btn" id="sendGameOffer">Offer Game</a>
+        &nbsp;
+        <a class="btn" id="closeModal">Cancel</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div id="joinDialog" class="dialogContent">
+  <div class="dialogTitle">Join game</div>
+  <div class="dialogBody">
+    You have been invited to a game of chess by <span id="inviter">friend</span>
+  </div>
+  <div  class="buttonBar">
+    <a class="btn" id="joinGame">Accept invitation</a>
+    &nbsp;
+    <a class="btn" id="closeModal">Return to lobby</a>
+  </div>
+</div>
+
+<div id="enterDialog" class="dialogContent">
+  <div class="dialogTitle">Enter Blitz game</div>
+  <div class="dialogBody">
+    You have an active Blitz game versus <span id="blitzOpponent">enemy</span>.
+  </div>
+  <div  class="buttonBar">
+    <a class="btn" id="goGame">Go to game</a>
+    &nbsp;
+    <a class="btn" id="closeModal">Return to lobby</a>
+  </div>
+</div>
+
+<div id="inviteFriendDialog" class="dialogContent">
+  <div class="dialogTitle">Challenge a friend</div>
+  <div class="dialogBody">
+    <form id="inviteForm">
+      <div class="error" style="display:none"></div>
+      <label>Friend's email address:</label></br>
+      <input id="email" name="email" type="text" style="width:50%" />
+      <br/>
+      <br/>
+      <label>Game type:</label><br/>
+      <div class="radioGroup">
+        <input type="radio" checked="checked" name="game_type" value="blitz-5" />Blitz Chess (5 minutes per side)<br/>
+        <input type="radio" name="game_type" value="blitz-10"/>Speed Chess (10 minutes per side)<br/>
+        <input type="radio" name="game_type" value="chess"/>Chess (regular chess - no time limits)<br/>
+      </div>
+      <div class="checkboxGroup">
+        <input type="checkbox" name="public" checked="checked" value="true"/>Allow spectators to watch this game
+      </div>
+    </form>
+    <div  class="buttonBar">
+      <span>
+        <a class="btn" id="sendInvite">Send game invite</a>
+        &nbsp;
+        <a class="btn" id="closeModal">Cancel</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

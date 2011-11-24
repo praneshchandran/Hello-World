@@ -1,0 +1,55 @@
+{% extends '_base.html' %}
+
+{% block head_extra %}
+  <script type='text/javascript' src='/static/dotmatrix.js'></script>
+{% endblock %}
+
+{% block content %}
+  <div class='drawing'>
+    <h3>Preview</h3>
+    <p>Are you sure everything is correct?  Spelled the name correctly?  Around
+    here, pictures are permanent.  This means you can link to a picture without
+    worrying about it changing, but once you click "Save,"
+    that's it: you can't go back and fix anything or delete the
+    picture.</p>
+    <table class='preview'>
+      {% for row in pic.pixels_as_enumerated_grid %}
+      <tr>
+        {% for pixel in row %}
+        <td name='preview_pixel_{{ pixel.id }}'
+          class='{{ pixel.value|yesno:"black,white" }}'>
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+    <form method='post'>
+      <input type='hidden' name='width' value='{{ pic.width }}'>
+      <input type='hidden' name='height' value='{{ pic.height }}'>
+      <input type='hidden' name='name' value='{{ pic.name }}'>
+      <table class='hidden'>
+        {% for row in pic.pixels_as_enumerated_grid%}
+        <tr>
+          {% for pixel in row %}
+          <td>
+            <input id=pixel_in_{{ pixel.id }}
+                   name=pixel_in_{{ pixel.id }}
+                   type='checkbox'
+                   {{ pixel.value|yesno:"checked," }}>
+           </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+      Name: {{ pic.name }}
+      <br>
+      <div>
+        <input type='submit' name='action' value='Save'>
+        <input type='submit' name='action' value='Back to Editing'>
+      </div>
+    </form>
+  </div class='drawing'>
+  <br class='clear'>
+  <a href='/list'>Cancel (Back to List)</a>
+{% endblock %}

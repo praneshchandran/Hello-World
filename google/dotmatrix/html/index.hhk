@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#ac775ee34451fdfa742b318538164070e"><param name="Name" value="__init__"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#ab9fb123aa392acca7f7dd957097d7e2e"><param name="Name" value="after_logout_url"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a30a7f35c82bb3cd7ef47f62bdb766829"><param name="Name" value="AsDict"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ab8d0aadaa6ca79ab56d564cc3dcf0cfa"><param name="Name" value="author"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a1481ea60cb06e9afb3e00abde9b0a5ce"><param name="Name" value="case_insensitive_name"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a1122f61c0482ac76649c2919343fb351"><param name="Name" value="Checked"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_date_sort_index.html#a0197cae1a2199db417b3b3f2ae28aa5a"><param name="Name" value="counter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_date_sort_index.html#a225ce0d28b8cd7393289b2b01812da57"><param name="Name" value="current"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#aa20ec81a011e738509e906524b713fc3"><param name="Name" value="date"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a5bd1c414784278b38d9758a576c30b91"><param name="Name" value="date_sort_index"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a551ff6e61457a99f9f2ec929f03da8d0"><param name="Name" value="DeleteByName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ae56b2de69707c7ea3580b2f888c523fd"><param name="Name" value="display_author"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#acc42076253600be964e110149b458971"><param name="Name" value="errors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a01750b827c6435ffae00f0c10d05a511"><param name="Name" value="FormatDate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a0363cdc158f7930abe1a30e710b2d040"><param name="Name" value="FromDict"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_about.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="get"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_about.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views::About"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views::Edit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_error404.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views::Error404"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_image.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views::Image"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_list.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views::List"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_root.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views::Root"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_admin.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views_admin::Admin"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_backup.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views_admin::Backup"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_restore.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views_admin::Restore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_test.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="views_admin::Test"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a6b0618be3a5e2b65be3e5867b8662098"><param name="Name" value="GetByName"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_about.html#aeaefa23d5d7a8b7820a54974bab74c36"><param name="Name" value="GetChessboard"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a1cb8099da2223afb070a516399c2908a"><param name="Name" value="GetPngData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ab7caf8026ae6d835c62f365c67e55dfb"><param name="Name" value="height"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_date_sort_index.html#a8be973f46fb18ee62d94e9cdfdf92550"><param name="Name" value="increment"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_date_sort_index.html"><param name="Name" value="models::DateSortIndex"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_date_sort_index.html#a0197cae1a2199db417b3b3f2ae28aa5a"><param name="Name" value="counter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_date_sort_index.html#a225ce0d28b8cd7393289b2b01812da57"><param name="Name" value="current"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_date_sort_index.html#a8be973f46fb18ee62d94e9cdfdf92550"><param name="Name" value="increment"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html"><param name="Name" value="models::Picture"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a30a7f35c82bb3cd7ef47f62bdb766829"><param name="Name" value="AsDict"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ab8d0aadaa6ca79ab56d564cc3dcf0cfa"><param name="Name" value="author"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a1481ea60cb06e9afb3e00abde9b0a5ce"><param name="Name" value="case_insensitive_name"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#aa20ec81a011e738509e906524b713fc3"><param name="Name" value="date"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a5bd1c414784278b38d9758a576c30b91"><param name="Name" value="date_sort_index"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a551ff6e61457a99f9f2ec929f03da8d0"><param name="Name" value="DeleteByName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ae56b2de69707c7ea3580b2f888c523fd"><param name="Name" value="display_author"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a0363cdc158f7930abe1a30e710b2d040"><param name="Name" value="FromDict"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a6b0618be3a5e2b65be3e5867b8662098"><param name="Name" value="GetByName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a1cb8099da2223afb070a516399c2908a"><param name="Name" value="GetPngData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ab7caf8026ae6d835c62f365c67e55dfb"><param name="Name" value="height"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ae7333ba405268c394ce84ab3b54f4030"><param name="Name" value="name"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#aa4a686e7cdf6581d0d4f7976b16f965b"><param name="Name" value="pixel_str"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a53ae5f136f956cb016e21a9196792eca"><param name="Name" value="pixels_as_enumerated_grid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a7024c5bbd0b51ecdfb6c1c6f14394148"><param name="Name" value="pixels_as_list"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a8f63a71e5b922c6137c01812a318dd93"><param name="Name" value="png_data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a6b875be2179dd1eed37edd8d7fe079ff"><param name="Name" value="put"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a2bfca10dc5fc956c8594177a0e444a87"><param name="Name" value="url"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#af6cb9dee05467846e86961c3323449d6"><param name="Name" value="Validate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a397bb3beea7b21f074bc75e1e71f132f"><param name="Name" value="width"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#ae7333ba405268c394ce84ab3b54f4030"><param name="Name" value="name"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_update_datastore.html#a211b6708acb44fb1075b5e5189fd32a7"><param name="Name" value="ordered_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html"><param name="Name" value="page::Page"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#ac775ee34451fdfa742b318538164070e"><param name="Name" value="__init__"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#ab9fb123aa392acca7f7dd957097d7e2e"><param name="Name" value="after_logout_url"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a1122f61c0482ac76649c2919343fb351"><param name="Name" value="Checked"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#acc42076253600be964e110149b458971"><param name="Name" value="errors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a01750b827c6435ffae00f0c10d05a511"><param name="Name" value="FormatDate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#ae290045798b267a6f687df6efdafa127"><param name="Name" value="RenderError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a82ca8dca23500069f9f709e48f5f183b"><param name="Name" value="RenderTemplate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a8051a1dea0636bd23457287c0ff6f113"><param name="Name" value="SetCache"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a66cb7625ae2fd7cdaaecd215ebfd2310"><param name="Name" value="TEMPLATE_PATH"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#aa4a686e7cdf6581d0d4f7976b16f965b"><param name="Name" value="pixel_str"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a53ae5f136f956cb016e21a9196792eca"><param name="Name" value="pixels_as_enumerated_grid"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a7024c5bbd0b51ecdfb6c1c6f14394148"><param name="Name" value="pixels_as_list"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a8f63a71e5b922c6137c01812a318dd93"><param name="Name" value="png_data"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="post"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="views::Edit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_error404.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="views::Error404"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_delete.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="views_admin::Delete"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_restore.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="views_admin::Restore"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a6b875be2179dd1eed37edd8d7fe079ff"><param name="Name" value="put"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#ae290045798b267a6f687df6efdafa127"><param name="Name" value="RenderError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html#ae8645b592c07cba6c0678abe9bd71047"><param name="Name" value="RenderPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a82ca8dca23500069f9f709e48f5f183b"><param name="Name" value="RenderTemplate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_update_datastore.html#a875cfcbc4e49b0d13fc78dd83849557d"><param name="Name" value="repeated_get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_restore.html#a250ff14e86b168b9ace025a269e5fe1d"><param name="Name" value="RestoreFromJson"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a8051a1dea0636bd23457287c0ff6f113"><param name="Name" value="SetCache"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classpage_1_1_page.html#a66cb7625ae2fd7cdaaecd215ebfd2310"><param name="Name" value="TEMPLATE_PATH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a2bfca10dc5fc956c8594177a0e444a87"><param name="Name" value="url"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#af6cb9dee05467846e86961c3323449d6"><param name="Name" value="Validate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_about.html"><param name="Name" value="views::About"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_about.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="get"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_about.html#aeaefa23d5d7a8b7820a54974bab74c36"><param name="Name" value="GetChessboard"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html"><param name="Name" value="views::Edit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="get"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="post"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_edit.html#ae8645b592c07cba6c0678abe9bd71047"><param name="Name" value="RenderPage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_error404.html"><param name="Name" value="views::Error404"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_error404.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="get"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_error404.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="post"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_image.html"><param name="Name" value="views::Image"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_list.html"><param name="Name" value="views::List"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews_1_1_root.html"><param name="Name" value="views::Root"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_admin.html"><param name="Name" value="views_admin::Admin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_backup.html"><param name="Name" value="views_admin::Backup"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_delete.html"><param name="Name" value="views_admin::Delete"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_restore.html"><param name="Name" value="views_admin::Restore"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_restore.html#a444a1328efb32d5d9d2dcb2efe855d3b"><param name="Name" value="get"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_restore.html#a49eef07c2e643292b02accabc4f0c182"><param name="Name" value="post"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_restore.html#a250ff14e86b168b9ace025a269e5fe1d"><param name="Name" value="RestoreFromJson"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_test.html"><param name="Name" value="views_admin::Test"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_update_datastore.html"><param name="Name" value="views_admin::UpdateDatastore"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_update_datastore.html#a211b6708acb44fb1075b5e5189fd32a7"><param name="Name" value="ordered_get"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classviews__admin_1_1_update_datastore.html#a875cfcbc4e49b0d13fc78dd83849557d"><param name="Name" value="repeated_get"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classmodels_1_1_picture.html#a397bb3beea7b21f074bc75e1e71f132f"><param name="Name" value="width"></OBJECT>
+</UL>
+</BODY>
+</HTML>

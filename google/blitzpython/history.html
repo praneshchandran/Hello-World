@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block header %}
+<div class="header">
+  <a href="/">Main</a>
+</div>
+{% endblock %}
+
+{% block logo %}
+<div class="logo">
+  <img src="images/logo.png" width="105px" height="111px"/>
+  <span class="oneLine">Game History</span>
+</div>
+{% endblock %}
+{% block content %}
+    Your record: {{record_string}}<br/>
+    {% if completed_games_list %}
+    <table class="zebra historyList">
+      <tr class="historyListHeader">
+        <th>Opponent</th>
+        <th>Color</th>
+        <th>Status</th>
+        <th>Ended</th>
+        <th>&nbsp;</th>
+      </tr>
+      {% for gameObj in completed_games_list %}
+      <tr>
+        <td>{{gameObj.get_opposing_player}}</td>
+        <td>{{gameObj.get_color_as_string}}</td>
+        <td>{{gameObj.get_outcome_as_string}}</td>      
+        <td>{{gameObj.get_last_modified}}</td>
+        <td><a class="btn" id="goGame" ref="{{gameObj.key}}">Review</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+      <br/>
+      You have not completed any games.<br/><br/>
+      <a style="text-decoration: underline" href="/lobby">Click here</a> to view your current games or join a new one.
+    {% endif %}
+
+{% endblock %}
