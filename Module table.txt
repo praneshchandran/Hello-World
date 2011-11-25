@@ -1,0 +1,35 @@
+class Employee(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    join_date = models.DateField()
+    experience = models.IntegerField()
+    address = models.CharField(max_length=100)
+    employee_id = models.IntegerField()
+    salary = models.IntegerField()
+    city = models.CharField(max_length=50)
+    
+    def employee_join_status(self):
+    "Returns the employee’s employee-join status."
+    import datetime
+        if datetime.date(2000, 01, 01) <= self.join_date <= datetime.date(2011, 01, 01):
+           return "Employee join"
+        if self.join_date < datetime.date(2000, 01, 01):
+           return "Premanent-employee"
+           return "Temproary-employee"
+
+       if permanent-employee:
+    def _get_full_name(self):
+    "Returns the employee's full name."
+           return '%s %s' % (self.first_name, self.last_name)
+           full_name = property(_get_full_name)
+
+    def _get_total_experience(self):
+    "Returns the employee's total experience."
+           return '%s %s' % (self.join_date, self.current_date)
+           total_experience = property(_get_total_experience)
+
+    def _get_total_salary(self):
+    "Returns the employee's total salary."
+           return '%s %s' % (self.gross_salary, self.net_salary)
+           total_salary = property(_get_total_salary)
+       
