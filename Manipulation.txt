@@ -1,0 +1,14 @@
+>>> lst = [1, "MeghaCloud", 4, "Ravi", "Pranesh"]
+>>> lst[0]
+1
+>>> lst[2:4]
+[4, 'Ravi']
+>>> lst[2:]
+[4, 'Ravi', 'Pranesh']
+>>> lst[:4]
+[1, 'MeghaCloud', 4, 'Ravi']
+>>> lst[-1]
+'Pranesh'
+>>> lst[:-2]
+[1, 'Meghacloud', 4]
+
